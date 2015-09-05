@@ -1,0 +1,19 @@
+/* ===========================
+   Base
+   =========================== */
+@import "site-settings";
+
+
+body {
+	font-size: 100%/1.5;
+	font-family: $font1;
+	color: $white;
+  background: $bluebg;
+
+}
+
+a {
+}
+
+
+img { display: block; margin:0 auto; max-width:100%; }

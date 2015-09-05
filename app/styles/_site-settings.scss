@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+// ----------------------
+// == Site settings
+// ----------------------
+
+@font-face {
+    font-family: 'sansationbold';
+    src: url('sansation-bold-webfont.eot');
+    src: url('sansation-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sansation-bold-webfont.woff2') format('woff2'),
+         url('sansation-bold-webfont.woff') format('woff'),
+         url('sansation-bold-webfont.ttf') format('truetype'),
+         url('sansation-bold-webfont.svg#sansationbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'satelliteregular';
+    src: url('satellite-webfont.eot');
+    src: url('satellite-webfont.eot?#iefix') format('embedded-opentype'),
+         url('satellite-webfont.woff2') format('woff2'),
+         url('satellite-webfont.woff') format('woff'),
+         url('satellite-webfont.ttf') format('truetype'),
+         url('satellite-webfont.svg#satelliteregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'sansationregular';
+  src: url('sansation-regular-webfont.eot');
+  src: url('sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('sansation-regular-webfont.woff2') format('woff2'),
+  url('sansation-regular-webfont.woff') format('woff'),
+  url('sansation-regular-webfont.ttf') format('truetype'),
+  url('sansation-regular-webfont.svg#sansationregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rochesterregular';
+  src: url('Rochester-Regular-webfont.eot');
+  src: url('Rochester-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('Rochester-Regular-webfont.woff') format('woff'),
+  url('Rochester-Regular-webfont.ttf') format('truetype'),
+  url('Rochester-Regular-webfont.svg#rochesterregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+// Fonts
+$font1: "satelliteregular", Helvetica, Arial, sans-serif;
+$font2: "sansationbold", Helvetica, Arial, sans-serif;
+$font3 : "sansationregular", Helvetica, Arial, sans-serif;
+$font4: 'rochesterregular',  Helvetica, Arial, sans-serif;;
+
+
+// = Colors
+// -----------------------------
+
+// Graphic chart
+$white: #ffffff;
+$greenbg: #16a085;
+$bluebg: #34495e;
+$darkblue: #1d2e40;
+$rosegateau: #E1A6AA;
+
+$color1: $white;
+$color2: $greenbg;
+
+
+
+h2{
+    font-family: $font1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+
+
+// = Grid
+// -----------------------------
+
+// Max width wrapper
+$wrapper-width: pxtoem(1140, 16);

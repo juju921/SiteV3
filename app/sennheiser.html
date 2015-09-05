@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>site</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+</head>
+<body class="single-work">
+
+<div class="menu-gal">
+    <div class="container">
+        <a href="" class="left"><img src="images/julienGarretMini.png"></a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">accueil</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">a propos</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div id="workBanner">
+    <div class="illustration">
+        <div class="title">
+            <div class="block-title">
+                <h1>sennheiser</h1>
+                <span>Page web</span>
+
+            </div>
+        </div>
+        <img src="images/sennheiserillus.jpg" alt="">
+    </div>
+</div>
+
+<div class="presentation">
+    <div class="container">
+        <p><span class="strong">Intégration</span> pour de la page <span class="strong">Booska-p</span> du  jeu-concours  <span class="strong">Sennheiser</span>.</p>
+
+        <br>
+
+        <p> Cette page permet de participer à un Blind test qui permet de gagner un des 3 casques de la gamme Urbanite (Urbanite, Urbanite XL, Urbanite XL Wireless)
+           </p>
+        <br>
+
+        <p>Technologies :HTML5, CSS3, JQUERY, PHP</p>
+        <br>
+
+        <a href="#" title="" id="acceder">Accèder au site</a>
+
+
+    </div>
+
+
+    <div class="demo">
+
+        <img src="images/sennheiserweb.png" data-original="images/sennheiserweb.png" alt="" id="tel" class="lazy">
+
+        <p>Le jeu concours Sennheiser intégré dans une iframe sur le site de Booska-p.</p>
+
+
+    </div>
+
+    <div class="demo">
+
+        <img src="images/senneheisercap.png" data-original="images/senneheisercap.png" alt=""  class="lazy pres">
+
+
+
+    </div>
+
+</div>
+
+
+<!-- build:js(.) scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/modernizr/modernizr.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<script src="scripts/jquery.lazyload.js"></script>
+<!-- endbuild -->
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+
+    $(function () {
+        $("img.lazy").lazyload({
+            effect: "fadeIn"
+        });
+
+    });
+
+</script>
+
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = 'https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>
