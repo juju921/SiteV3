@@ -1,37 +1,17 @@
 /* ==|====================
    Layout/Nav
    ======================= */
-.menu{
-	overflow: hidden;
-	 width: 100%;
-	  background: $greenbg;
-	   height: 110px;
-  
-  float: right;
-  z-index: 150;
-  padding: 0.1% 0 ;
-
-  .container{
-  	width: 80%;
-  	overflow: hidden;
-  	margin: auto;
-  }
- 
-}
-
-
-
-.menu-gal{
+.menu {
   overflow: hidden;
   width: 100%;
   background: $greenbg;
   height: 110px;
-  position: fixed;
 
   float: right;
   z-index: 150;
-  padding: 0.1% 0 ;
-  .container{
+  padding: 0.1% 0;
+
+  .container {
     width: 80%;
     overflow: hidden;
     margin: auto;
@@ -39,13 +19,29 @@
 
 }
 
+.menu-gal {
+  overflow: hidden;
+  width: 100%;
+  background: $greenbg;
+  height: 110px;
+  position: fixed;
+  top: 0;
+  float: right;
+  z-index: 150;
+  padding: 0.1% 0;
+  .container {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+  }
 
-
+}
 
 .main-nav,
 .main {
-  position: relative; 
+  position: relative;
 }
+
 .main-nav {
   background: $greenbg;
   height: 80px;
@@ -53,52 +49,39 @@
   margin: 0;
   float: right;
 
-  ul{
-  	padding: 0;
-  	margin: 0;
-  	list-style: none;
-li{
-  float: left;
-  padding: 8.256% 0;
-  margin-right: 48px;
-  a{
-	text-decoration: none;
-	display: block;
-	color: $white;
-	text-transform: capitalize;
-	font-size: 1.5em;
-	font-family: $font3;
-	&:hover{
-	  color: #0C5547;
-	}
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      float: left;
+      padding: 8.256% 0;
+      margin-right: 48px;
+      a {
+        text-decoration: none;
+        display: block;
+        color: $white;
+        text-transform: capitalize;
+        font-size: 1.5em;
+        font-family: $font3;
+        &:hover {
+          color: #0C5547;
+        }
+      }
+    }
   }
-}
-}
-
-
-
 
 }
-
-
-
-
-
-
-
-
 
 .main {
   background: $bluebg;
   //padding: 110px 50px 50px;
   margin-top: 140px;
 
- 
 }
 
-
 .main-nav-scrolled {
-		  background: $greenbg;
+  background: $greenbg;
 
   position: fixed;
   width: 100%;
@@ -106,10 +89,21 @@ li{
   overflow: hidden;
 }
 
+.left {
+  float: left;
+  margin: 0.499% auto;
+  width: 90px;
+  height: 90px;
+  display: block;
+  &:hover {
 
-
-
-.left{
-	float: left;
-  margin: 0.13636363636% auto;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotatoe(360deg);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+  }
 }

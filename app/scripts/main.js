@@ -1,5 +1,6 @@
 // jshint devel:true
 $(function () {
+
     var mn = $(".menu");
     var mns = "main-nav-scrolled";
     var hdr = $('header').height();
