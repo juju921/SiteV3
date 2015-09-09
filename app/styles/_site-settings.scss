@@ -87,6 +87,35 @@ h2{
 }
 
 
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$portable-width: 480px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+
+@mixin portable {
+  @media (min-width: #{$portable-width}) {
+    @content;
+  }
+}
+
+
+@mixin box-shadow($params) {
+  -webkit-box-shadow: $params;
+  -moz-box-shadow: $params;
+  box-shadow: $params;
+}
 
 
 // = Grid

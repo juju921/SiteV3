@@ -1,0 +1,55 @@
+/* ==|======================
+   responsive/Home
+   ========================= */
+
+@include portable {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu .container {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .menu--icon {
+    width: 50px;
+    height: 66px;
+    background: red;
+    display: block;
+    float: right;
+    cursor: pointer;
+
+  }
+
+  .menu--icon:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1rem;
+    height: 0;
+    top: 16px;
+    left: 15px;
+    -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+    box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
+  }
+  .main-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #2a378b;
+    width: 250px;
+    -moz-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -webkit-transform: translateX(250px);
+    transform: translateX(250px)
+  }
+
+
+}

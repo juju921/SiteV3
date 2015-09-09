@@ -12,6 +12,7 @@
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
@@ -62,7 +63,7 @@
         <p>Technologies :HTML5, CSS3, JQUERY, WORDPRESS</p>
         <br>
 
-        <a href="http://elodiemartins.com/" title="" id="acceder">Accèder au site</a>
+        <a href="http://elodiemartins.com/" title="" id="acceder" target="_blank">Accèder au site</a>
 
 
     </div>
@@ -77,10 +78,15 @@
 
     </div>
 
-    <div class="gateau parallax">
-        <h2>Elodie Martins</h2>
+    <section class="module content parallax parallax-1">
+        <div class="container">
+            <h2>Elodie Martins</h2>
 
-    </div>
+        </div>
+
+
+    </section>
+
     <div class="demo elodie">
 
         <img src="images/elodiepresentation.png" data-original="images/elodiepresentation.png" alt="" class="lazy pres">
@@ -140,6 +146,8 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.lazyload.js"></script>
+<script src="scripts/parallax.min.js"></script>
+
 <!-- endbuild -->
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -152,6 +160,9 @@
     });
 
 </script>
+
+
+
 
 <script>
     (function (b, o, i, l, e, r) {

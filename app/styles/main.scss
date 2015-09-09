@@ -15,7 +15,7 @@
  */
 
 
-@import "normalize"; 
+
 
 /* Site settings */
 @import "site-settings";
@@ -37,10 +37,10 @@
 @import "layout/home";
 @import "layout/main";
 @import "layout/footer";
-
+@import  "layout/responsive";
 
 /* Layouts */
-@import "layout/constrained";
+//@import "layout/constrained";
 
 /* Modules */
-@import "modules/box";
+//@import "modules/box";
