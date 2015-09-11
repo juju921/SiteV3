@@ -1,0 +1,26 @@
+.circliful {
+    position: relative; 
+}
+
+ .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+
+}
+
+.circle-text{
+    display: none;
+}
+
+
+.circle-info, .circle-info-half {
+	color: #999;
+    display: none;
+}
+
+.circliful .fa {
+	margin: -10px 3px 0 3px;
+	position: relative;
+	bottom: 4px;
+}

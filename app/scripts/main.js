@@ -4,12 +4,26 @@ $(function () {
     var mn = $(".menu");
     var mns = "main-nav-scrolled";
     var hdr = $('header').height();
+    var hasCreatedObjects = false;
+
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > hdr) {
             mn.addClass(mns);
         } else {
             mn.removeClass(mns);
+        }
+
+        var y = $(this).scrollTop();
+
+        if (y >= 3028) {
+            //console.log(y);
+           //alert("beau gosse");
+            if (!hasCreatedObjects) {
+                hasCreatedObjects = true;
+                $('#myStat1, #myStat2, #myStat3, #myStat4, #myStat5, #myStat6, #myStat7, #myStat8, #myStat9').circliful();
+
+            }
         }
 
     });
