@@ -8,6 +8,27 @@
     padding: 0;
   }
 
+  header {
+    background: $greenbg;
+    width: 100%;
+
+    .container {
+      width: 100%;
+      padding-top: 0; /*2.50847457627%;*/
+      text-align: center;
+      margin: auto;
+    }
+    img {
+      width: 50%;
+    }
+    h1 {
+      font-size: 1.703125em;
+      margin: 0;
+      font-family: $font1;
+      text-transform: capitalize;
+    }
+  }
+
   .menu .container {
     width: 100%;
     overflow: hidden;
@@ -17,7 +38,6 @@
   .menu--icon {
     width: 50px;
     height: 66px;
-    background: red;
     display: block;
     float: right;
     cursor: pointer;
@@ -27,29 +47,26 @@
   .menu--icon:after {
     content: '';
     position: absolute;
+    z-index: 20;
     display: block;
     width: 1rem;
     height: 0;
     top: 16px;
-    left: 15px;
+    right: 25px;
     -moz-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
     -webkit-box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
     box-shadow: 0 10px 0 1px #fff, 0 16px 0 1px #fff, 0 22px 0 1px #fff;
   }
   .main-nav {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    background-color: #2a378b;
-    width: 250px;
-    -moz-transform: translateX(250px);
-    -ms-transform: translateX(250px);
-    -webkit-transform: translateX(250px);
-    transform: translateX(250px)
+    background: $greenbg;
+    height: 80px;
+    overflow: hidden;
+    margin: 0;
+    float: right;
+
   }
 
-
 }
+
+
+

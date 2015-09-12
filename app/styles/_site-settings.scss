@@ -105,7 +105,7 @@ $portable-width: 480px;
 
 
 @mixin portable {
-  @media (min-width: #{$portable-width}) {
+  @media only screen and (min-width: #{$portable-width}) {
     @content;
   }
 }
@@ -116,6 +116,43 @@ $portable-width: 480px;
   -moz-box-shadow: $params;
   box-shadow: $params;
 }
+
+
+
+
+// = Mixim
+//------------
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin transform($val) {
+  -webkit-transform: $val;
+  -moz-transform: $val;
+  -ms-transform: $val;
+  transform: $val;
+}
+
+@mixin translate( $val: -2deg ) {
+  -webkit-transform: translate($val);
+  -moz-transform: translate($val);
+  -ms-transform: translate($val);
+  -o-transform: translate($val);
+  transform: translate($val);
+}
+
+@mixin Opacity($value){
+  $IEValue: $value*100;
+  opacity: $value;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity="+$IEValue+")";
+  filter: alpha(opacity=$IEValue);
+}
+
+
 
 
 // = Grid

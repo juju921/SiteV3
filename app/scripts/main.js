@@ -57,5 +57,15 @@ $(function () {
 
 
 
+    $('#menu--icon').click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('#site-container').toggleClass('open');
+    });
+
+
+
+
+
 
 });
