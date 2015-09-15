@@ -342,16 +342,27 @@ section.module.parallax-1 {
     }
     .textdescription {
       width: 50%;
-    background:$darkblue;
+      display:table;
+      background:$darkblue;
       float: left;
-      max-height: 445px;
-      padding-bottom: 20px;
+    max-height: 445px;
+     // padding-bottom: 20px;
+
       h3{
         border-bottom: 1px solid $greenbg;
       }
       .center {
         width: 50%;
         margin: auto;
+        display:table-cell; vertical-align:middle;
+        height: 445px;
+
+        div{
+          width: 50%;
+          margin: auto;
+        }
+
+
       }
     }
   }
@@ -468,5 +479,19 @@ section.module.parallax-1 {
   p{
     text-align: center;
   }
+  }
+}
+
+
+.sociaux{
+  width: 80%;
+  margin: auto;
+  p{
+    text-align: center;
+  }
+  .component{
+    width: 52%;
+    margin: auto;
+
   }
 }

@@ -269,6 +269,11 @@ module.exports = function (grunt) {
       }
     },
 
+
+
+
+
+
     svgmin: {
       dist: {
         files: [{
@@ -280,28 +285,28 @@ module.exports = function (grunt) {
       }
     },
 
-    htmlmin: {
-      dist: {
-        options: {
-          collapseBooleanAttributes: true,
-          collapseWhitespace: true,
-          conservativeCollapse: true,
-          removeAttributeQuotes: true,
-          removeCommentsFromCDATA: true,
-          removeEmptyAttributes: true,
-          removeOptionalTags: true,
-          // true would impact styles with attribute selectors
-          removeRedundantAttributes: false,
-          useShortDoctype: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= config.dist %>',
-          src: '{,*/}*.html',
-          dest: '<%= config.dist %>'
-        }]
-      }
-    },
+//    htmlmin: {
+//      dist: {
+//        options: {
+//          collapseBooleanAttributes: true,
+//          collapseWhitespace: true,
+//          conservativeCollapse: true,
+//          removeAttributeQuotes: true,
+//          removeCommentsFromCDATA: true,
+//          removeEmptyAttributes: true,
+//          removeOptionalTags: true,
+//          // true would impact styles with attribute selectors
+//          removeRedundantAttributes: false,
+//          useShortDoctype: true
+//        },
+//        files: [{
+//          expand: true,
+//          cwd: '<%= config.dist %>',
+//          src: '{,*/}*.html',
+//          dest: '<%= config.dist %>'
+//        }]
+//      }
+//    },
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
@@ -380,8 +385,8 @@ module.exports = function (grunt) {
         'svgmin'
       ]
     }
-  });
 
+  });
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
@@ -433,6 +438,7 @@ module.exports = function (grunt) {
     'filerev',
     'usemin',
     'htmlmin'
+
   ]);
 
   grunt.registerTask('default', [

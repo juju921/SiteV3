@@ -90,6 +90,7 @@ h2{
 $tablet-width: 768px;
 $desktop-width: 1024px;
 $portable-width: 480px;
+$portable-miniwi:320px;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -105,7 +106,14 @@ $portable-width: 480px;
 
 
 @mixin portable {
-  @media only screen and (min-width: #{$portable-width}) {
+  @media only screen and (max-width: #{$portable-width}) {
+    @content;
+  }
+}
+
+
+@mixin portablemini {
+  @media only screen and (max-width: #{$portable-miniwi}) {
     @content;
   }
 }

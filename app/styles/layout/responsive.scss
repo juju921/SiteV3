@@ -66,7 +66,397 @@
 
   }
 
+  .portfolio {
+    h2 {
+      font-size: 2.125em;
+      margin: 3.02857142857% auto 3.02857142857% auto;
+      padding: 3.029% 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+
+    }
+    .gal {
+      width: 100%;
+      overflow: hidden;
+    }
+    article {
+      width: 100%;
+      overflow: hidden;
+      float: left;
+      position: relative;
+
+      img {
+        width: 100%;
+        float: left;
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        -ms-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        -moz-transition-delay: 0.2s;
+        -webkit-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        -ms-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+
+      }
+      &:hover {
+
+      }
+      .box-hover {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0;
+        box-sizing: border-box;
+        background: rgba(52, 73, 94, 0.65) none repeat scroll 0% 0%;
+        position: absolute;
+        transition: all 1100ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+
+        .box {
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          text-align: center;
+
+        }
+
+        &:hover {
+          opacity: 1;
+
+        }
+
+        h3 {
+          color: $white;
+          font-family: $font2;
+          font-size: 1.82375em;
+          line-height: 1em;
+          margin-bottom: 0;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-size: $font3;
+          color: $white;
+          font-size: 1.255em;
+
+        }
+
+      }
+    }
+  }
+
+  .apropos {
+
+    .description {
+      width: 100%;
+      overflow: hidden;
+      .coding {
+
+        img {
+          width: 100%;
+
+        }
+        width: 100%;
+        float: left;
+
+      }
+      .textdescription {
+        width: 100%;
+        background:$darkblue;
+        float: left;
+        max-height: 445px;
+        padding-bottom: 20px;
+        h3{
+          border-bottom: 1px solid $greenbg;
+        }
+        .center {
+          width: 85%;
+          margin: auto;
+          div{
+            width: 85%;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .competence {
+      height: 400px;
+      width: 85%;
+      margin: 130px auto 0 auto;
+
+      h3{
+        font-size: 1.5em;
+        font-family: $font2;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+
+      .languages {
+        width: 100%;
+        float: none;
+        height: 350px;
+      }
+      .framwork {
+        width: 100%;
+
+        height: 282px;
+      }
+
+      .left {
+        float: left;
+        text-align: left;
+        width: 50%;
+        .pourcent {
+          float: left;
+          width: 25%;
+
+        }
+        .nomination {
+          float: right;
+          width: 75%;
+          line-height: 65px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .bloc {
+          overflow: hidden;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+
+  .dlresume {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+    .moncv {
+      display: block;
+      text-decoration: none;
+      color: #FFFFFF;
+      background: $greenbg;
+      width: 203px;
+      height: 19px;
+      line-height: 19px;
+      text-align: center;
+      margin: auto;
+      padding: 13px 29px;
+      text-transform: uppercase;
+    }
+  }
+  .input--rurifirst {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 8.8125em 1em 1em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .contact {
+
+    .container {
+      width: 85%;
+      margin: auto;
+      overflow: hidden;
+
+
+      textarea {
+        width: 91%;
+        margin: auto;
+        background: $darkblue;
+        border-bottom: 5px solid $greenbg;
+        color: lighten($bluebg, 20%);
+        margin: 1em;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-color: Transparent;
+        resize: none;
+        height: 298px;
+        font-size: 1.5em;
+        padding: 18px 0  0 10px;
+      }
+      input[type="submit"] {
+        background: $greenbg;
+        width: 100%;
+       font-size: 1.6em;
+        display: block;
+        padding: 14px 20px 25px 20px;
+        float: none;
+        margin: 0 auto;
+        height: 13px;
+        line-height: 13px;
+        text-align: center;
+        border:none;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      p{
+        text-align: center;
+      }
+    }
+  }
+
+  .sociaux{
+    width: 85%;
+    margin: auto;
+    p{
+      text-align: center;
+    }
+    .component{
+      width: 85%;
+      margin: auto;
+
+    }
+  }
+
+
+
+  .illustration {
+    top: 0px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 103px;
+    img {
+      width: 100%;
+      z-index: 1;
+      position: relative;
+    }
+    .title {
+      z-index: 3;
+      left: 1.8%;
+      right: auto;
+      width: 96.6667%;
+      text-align: center;
+      position: absolute;
+      bottom: 75px;
+      .block-title {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 75%;
+      }
+      h1 {
+        font-family: $font2;
+        font-size: 2.375em;
+        margin: 0;
+        text-transform: uppercase;
+
+      }
+      span {
+        font-family: $font3;
+        font-size: 1.75em;
+      }
+
+    }
+  }
+
+
+  .single-work {
+    .presentation {
+      margin-top: 80%;
+      /*padding: 45px 0px 80px;*/
+      padding: 45px 0px 0;
+    }
+  }
+
+
+
+.presentation {
+  position: relative;
+  background: $bluebg none repeat scroll 0% 0%;
+  width: 100%;
+  //margin-top: 742px;
+  //padding: 45px 0px 80px;
+
+  z-index: 2;
+
+  .container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+
+  p {
+    margin: 0;
+    font-family: $font3;
+  }
+  .strong {
+    font-family: $font2;
+  }
+
+  #acceder {
+    display: block;
+    background: $greenbg;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 8px 25px;
+    width: 201px;
+    height: 40px;
+    margin: 0 auto 130px auto;
+    line-height: 40px;
+    font-size: 1.125em;
+    &:hover {
+
+      color: #0C5547;
+    }
+  }
+
+  .elodie {
+    padding-top: 68px;
+
+  }
+  .pres {
+    margin-bottom: 73px;
+
+  }
+
 }
+
+
+  .menu {
+    overflow: visible;
+    width: 100%;
+    background: $greenbg;
+    height: 110px;
+    z-index: 3;
+    float: right;
+    z-index: 150;
+    padding: 0.1% 0;
+
+    .container {
+      width: 100%;
+      overflow: visible;
+      margin: auto;
+      padding: 0;
+    }
+
+  }
+
+}
+
 
 
 
