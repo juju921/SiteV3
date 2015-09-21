@@ -1,22 +1,14 @@
 
-@-webkit-viewport { width: device-width; }
-@-moz-viewport { width: device-width; }
-@-ms-viewport { width: device-width; }
-@-o-viewport { width: device-width; }
-@viewport { width: device-width; }
+/* ==|======================
+   Layout/navscrol
+   ========================= */
 
-@font-face {
-  font-family: 'sansationregular';
-  src: url('sansation-regular-webfont.eot');
-  src: url('sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('sansation-regular-webfont.woff2') format('woff2'),
-  url('sansation-regular-webfont.woff') format('woff'),
-  url('sansation-regular-webfont.ttf') format('truetype'),
-  url('sansation-regular-webfont.svg#sansationregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
 
-}
+
+
+
+
+
 /* ------------------------------------------
   RESPONSIVE NAV STYLES
 --------------------------------------------- */
@@ -172,10 +164,17 @@
   font-family: "sansationregular", Helvetica, Arial, sans-serif;
 }
 
+
+
 .nav-collapse a:active,
 .nav-collapse .active a {
   color: #0C5547;
 }
+
+.nav-collapse a:hover{
+  color: #0C5547;
+}
+
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
@@ -208,9 +207,9 @@
   font-family: "responsivenav";
   src:url("../icons/responsivenav.eot");
   src:url("../icons/responsivenav.eot?#iefix") format("embedded-opentype"),
-    url("../icons/responsivenav.ttf") format("truetype"),
-    url("../icons/responsivenav.woff") format("woff"),
-    url("../icons/responsivenav.svg#responsivenav") format("svg");
+  url("../icons/responsivenav.ttf") format("truetype"),
+  url("../icons/responsivenav.woff") format("woff"),
+  url("../icons/responsivenav.svg#responsivenav") format("svg");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,0 +1,272 @@
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em 1em 2.5em 1em;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input--rurifirst {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em 16.813em 1em 1em;
+  max-width: 350px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input--ruribig{
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1.5em;
+  max-width: 90%;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #16a085;
+  color: #1d2e40;
+  font-weight: 400;
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #1d2e40;
+  font-weight: bold;
+  font-size: 1.5em;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+
+.icon {
+  color: #ddd;
+  font-size: 150%;
+}
+
+
+
+/* Ruri */
+.input__field--ruri {
+  width: 100%;
+  background: transparent;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  padding: 0.5em 0;
+  margin-bottom: 2em;
+
+}
+
+.input__label--ruri {
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  font-size: 1.5em;
+  padding: 10px 0 5px;
+  pointer-events: none;
+}
+
+.input__label--ruri::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background: #16a085;
+  left: 0;
+  top: 100%;
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.input__label-content--ruri {
+  padding: 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.input__field--ruri:focus + .input__label--ruri::after,
+.input--filled .input__label--ruri::after {
+  background: #16a085;
+  -webkit-transform: scale3d(1, 0.25, 1);
+  transform: scale3d(1, 0.25, 1);
+}
+
+.input__field--ruri:focus + .input__label--ruri .input__label-content--ruri,
+.input--filled .input__label--ruri .input__label-content--ruri {
+  color: #16a085;
+  -webkit-transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+  transform: translate3d(0, 2em, 0) scale3d(0.655, 0.655, 1);
+}
+
+
+/* =============================================================================
+  ICONS - DEMO 4
+============================================================================= */
+/**
+ * "icon-border" class name used to indicate an icon that has an animated border
+ * effect.
+ *
+ * Example HTML:
+ *
+ * <a href="#" class="icon icon-border facebook">facebook</a>
+ * <a href="#" class="icon icon-border twitter">twitter</a>
+ * ...
+ */
+
+/* =============================================================================
+  ICONS - COMMON
+============================================================================= */
+/**
+ * Icon common styles.
+ *
+ * Set it to block or inline block, whichever suits your needs. Overflow set to
+ * hidden for precautions, and make sure to set the font size to 0 and the text
+ * indent to -9999px. This allows us to actually include text in the markup
+ * which will be good for screen readers and accessibility purposes.
+ */
+.icon{
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  margin: 0 10px 0 10px;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+}
+
+
+
+.icon-border {
+  position: relative;
+}
+
+.icon-border::before,
+.icon-border::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.icon-border::before {
+  z-index: 1;
+  -webkit-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+
+.icon-border::after {
+  z-index: 2;
+  background: url("../images/icons4.png");
+  /*background-image: url("../images/icons4.svg"), none;*/
+}
+
+/* facebook */
+.icon-border.facebook::before {
+  box-shadow: inset 0 0 0 48px #0077b5;
+}
+
+.icon-border.facebook:hover::before {
+  box-shadow: inset 0 0 0 4px #0077b5;
+}
+
+.icon-border.facebook::after {
+  background-position: 0 0;
+}
+
+/* twitter */
+.icon-border.twitter::before {
+  box-shadow: inset 0 0 0 48px #272727;
+}
+
+.icon-border.twitter:hover::before {
+  box-shadow: inset 0 0 0 4px #272727;
+}
+
+.icon-border.twitter::after {
+  background-position: -96px 0;
+}
+
+/* google plus */
+.icon-border.googleplus::before {
+  box-shadow: inset 0 0 0 48px #55acee;
+}
+
+.icon-border.googleplus:hover::before {
+  box-shadow: inset 0 0 0 4px #55acee;
+}
+
+.icon-border.googleplus::after {
+  background-position: -192px 0;
+}
+
+/* github */
+.icon-border.github::before {
+  box-shadow: inset 0 0 0 48px #3b5998;
+}
+
+.icon-border.github:hover::before {
+  box-shadow: inset 0 0 0 4px #3b5998;
+}
+
+.icon-border.github::after {
+  background-position: -288px 0;
+}
+
+/* rss */
+.icon-border.rss::before {
+  box-shadow: inset 0 0 0 48px #cc3732;
+}
+
+.icon-border.rss:hover::before {
+  box-shadow: inset 0 0 0 4px #cc3732;
+}
+
+.icon-border.rss::after {
+  background-position: -384px 0;
+}

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -14,8 +15,8 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/jquery.circliful.css"/>
-    <link rel="stylesheet" href="styles/styleinp.css"/>
-    <link rel="stylesheet" href="styles/navscrol.css">
+    <!--<link rel="stylesheet" href="styles/styleinp.css"/>-->
+    <!-- <link rel="stylesheet" href="styles/navscrol.css">-->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -28,334 +29,338 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 <div class="site-container" id="site-container">
-<div class="site-pusher" id="site-pusher">
-    <header>
-        <div class="container">
+    <div class="site-pusher" id="site-pusher">
+        <header>
+            <div class="container" id="home" data-scroll>
 
-            <img src="images/julienGarret.png">
+                <img src="images/julienGarret.png">
 
-            <h1>julien garret</h1>
-             <h2>développeur front-End</h2>
-            <a href="#" class="down">
+                <h1>julien garret</h1>
 
-                <img src="images/down.png" alt="" class="flechemouve">
+                <h2>développeur front-End</h2>
+                <a href="#portfolio" class="down">
 
-
-            </a>
-        </div>
-    </header>
-
-    <div class="menu">
-        <div class="container">
-            <a href="" class="logo"><img src="images/julienGarretMini.png"></a>
-            <nav class=" nav-collapse">
-
-                <ul>
-                    <li class="menu-item"><a href="#">accueil</a></li>
-                    <li class="menu-item"><a href="#">portfolio</a></li>
-                    <li class="menu-item"><a href="#">a propos</a></li>
-                    <li class="menu-item"><a href="#">contact</a></li>
-                </ul>
-            </nav>
-        </div>
-
-    </div>
+                    <img src="images/down.png" alt="" class="flechemouve">
 
 
-    <div class="main portfolio">
-        <div class="container">
-            <h2 id="portfolio">portfolio</h2>
-        </div>
-        <section class="gal">
-            <article>
-                <a href="oitnb.html" title="Orange Is the New Black">
-                    <img src="images/oitnb.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Orange is <br> a new black</h3>
-                            <span>Site mobile pour jeu concours</span>
-                        </div>
-                    </div>
                 </a>
-            </article>
-            <article>
-                <a href="elodie.html" title="Elodie Martins">
+            </div>
+        </header>
 
+        <div class="menu">
+            <div class="container ">
+                <a href="" class="logo"><img src="images/julienGarretMini.png"></a>
+                <nav class=" nav-collapse subMenu">
 
-                    <img src="images/elodie.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Elodie Martins</h3>
-                            <span>Site web</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="sennheiser.html" title="sennheiser">
-                    <img src="images/sennheiser.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>sennheiser</h3>
-                            <span>Page web - jeu concours</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="hiscox.html" title="Hiscox">
-                    <img src="images/hiscox.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Hiscox</h3>
-                            <span>Page web - articles</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="wot.html" title="Le choc des blindés">
-                    <img src="images/chocdesblindees.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Le choc des blindées</h3>
-                            <span>Mini site - jeu concours</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="fifa.html" title="fifa 15">
-                    <img src="images/fifa15.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Fifa 15</h3>
-                            <span>Page web -  quizz</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="huawei.html" title="Honor 6">
-                    <img src="images/Huwei-Honor.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>Huawei Honor 6</h3>
-                            <span>Page web -  jeu concours</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="pstv.html" title="Playstation">
-                    <img src="images/pstv.jpg">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>pstv</h3>
-                            <span>Page web -  jeu concours</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-            <article>
-                <a href="adexchange.html">
-                    <img src="images/adexchange.gif">
-
-                    <div class="box-hover">
-                        <div class="box">
-                            <h3>adexchange</h3>
-                            <span>Site web</span>
-                        </div>
-                    </div>
-                </a>
-            </article>
-
-        </section>
-        <section class="main apropos">
-            <div class="container">
-                <h2 id="apropos">à propos</h2>
+                    <ul>
+                        <li class="menu-item "><a href="#home" data-scroll>accueil</a></li>
+                        <li class="menu-item"><a href="#portfolio" data-scroll>portfolio</a></li>
+                        <li class="menu-item"><a href="#apropos" data-scroll>a propos</a></li>
+                        <li class="menu-item"><a href="#contact" data-scroll>contact</a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <div class="description">
-                <section class="coding">
-                    <img src="images/coding.jpg" data-original="images/coding.jpg" alt="" class="lazy">
+        </div>
 
 
-                </section>
-
-                <section class="textdescription">
-
-                    <div class="center">
-                        <div>
-                       <!-- <h3>Julien Garret Développeur Front-End</h3>-->
-
-                        <p> Bonjour, je m’appelle Julien j’ai 29 ans, je suis Développeur Front-End diplômé de l'Ecole Multmédia (niveau II [Bac+3/4])</p>
-
-
-                        <p> Passionné par le web et les nouvelles technologies, je suis sans cesse à la recherche de nouveautés me permettant d'enrichir mes connaissances.</p>
-
-                        <p> J'aime également la musique, les jeux vidéos, les mangas, les comics.</p>
-                    </div>
-                    </div>
-
-                </section>
-
+        <div class="main portfolio">
+            <div class="container ">
+                <h2 id="portfolio">portfolio</h2>
             </div>
+            <section class="gal">
+                <article>
+                    <a href="oitnb.html" title="Orange Is the New Black">
+                        <img src="images/oitnb.jpg">
 
-
-            <section class="competence">
-
-                <div class="languages">
-                    <h3>langages</h3>
-
-                    <div class="left">
-                        <div class="bloc">
-                            <div class="pourcent">
-                                <div id="myStat1" data-dimension="65" data-text="55%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="90" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Orange is <br> a new black</h3>
+                                <span>Site mobile pour jeu concours</span>
                             </div>
-                            <div class="nomination">HTML5</div>
                         </div>
-                        <div class="bloc">
-                            <div class="pourcent">
-                                <div id="myStat2" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="80" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                    </a>
+                </article>
+                <article>
+                    <a href="elodie.html" title="Elodie Martins">
+
+
+                        <img src="images/elodie.jpg">
+
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Elodie Martins</h3>
+                                <span>Site web</span>
                             </div>
-                            <div class="nomination">CSS3</div>
                         </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="sennheiser.html" title="sennheiser">
+                        <img src="images/sennheiser.jpg">
 
-                        <div class="bloc">
-
-                            <div class="pourcent">
-                                <div id="myStat3" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="50" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>sennheiser</h3>
+                                <span>Page web - jeu concours</span>
                             </div>
-                            <div class="nomination">JQUERY</div>
                         </div>
-                    </div>
-                    <div class="left">
-                        <div class="bloc">
+                    </a>
+                </article>
+                <article>
+                    <a href="hiscox.html" title="Hiscox">
+                        <img src="images/hiscox.jpg">
 
-                            <div class="pourcent">
-
-                                <div id="myStat4" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="30" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Hiscox</h3>
+                                <span>Page web - articles</span>
                             </div>
-                            <div class="nomination">PHP</div>
-
                         </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="wot.html" title="Le choc des blindés">
+                        <img src="images/chocdesblindees.jpg">
 
-
-                        <div class="bloc">
-
-                            <div class="pourcent">
-                                <div id="myStat5" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="30" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Le choc des blindées</h3>
+                                <span>Mini site - jeu concours</span>
                             </div>
-                            <div class="nomination">JAVASCRIPT</div>
-
                         </div>
-                    </div>
-                </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="fifa.html" title="fifa 15">
+                        <img src="images/fifa15.jpg">
 
-                <div class="framwork">
-                    <h3>frameworks et cms</h3>
-
-                    <div class="left">
-
-                        <div class="bloc">
-
-                            <div class="pourcent">
-
-                                <div id="myStat6" data-dimension="65" data-text="55%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="35" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Fifa 15</h3>
+                                <span>Page web -  quizz</span>
                             </div>
-                            <div class="nomination"> Symfony 2</div>
                         </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="huawei.html" title="Honor 6">
+                        <img src="images/Huwei-Honor.jpg">
 
-
-                        <div class="bloc">
-
-                            <div class="pourcent">
-                                <div id="myStat7" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="35" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>Huawei Honor 6</h3>
+                                <span>Page web -  jeu concours</span>
                             </div>
-                            <div class="nomination"> Laravel</div>
-
                         </div>
-                    </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="pstv.html" title="Playstation">
+                        <img src="images/pstv.jpg">
 
-                    <div class="left">
-
-                        <div class="bloc">
-
-                            <div class="pourcent">
-
-                                <div id="myStat8" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="35" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>pstv</h3>
+                                <span>Page web -  jeu concours</span>
                             </div>
-                            <div class="nomination"> Codeigniter</div>
-
                         </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="adexchange.html">
+                        <img src="images/adexchange.gif">
 
-
-                        <div class="bloc">
-
-                            <div class="pourcent">
-                                <div id="myStat9" data-dimension="65" data-text="35%" data-info="New Clients"
-                                     data-width="10"
-                                     data-fontsize="38" data-percent="35" data-fgcolor="#179d83"
-                                     data-bgcolor="#121c27"></div>
+                        <div class="box-hover">
+                            <div class="box">
+                                <h3>adexchange</h3>
+                                <span>Site web</span>
                             </div>
-                            <div class="nomination"> Wordpress</div>
                         </div>
+                    </a>
+                </article>
 
-                    </div>
-
-
-                </div>
-
-                <div class="clear"></div>
             </section>
-
-            <div class="dlresume">
-                <a href="" title="télécharger mon cv" class="moncv">télécharger mon cv</a>
-            </div>
-
-
-            <section class="contact">
-
-
-                <h2>contact</h2>
-
+            <section class="main apropos">
                 <div class="container">
-                    <p>Mon profil vous intéresse ? N’hésitez pas à me contacter via le formulaire ci-dessous.</p>
+                    <h2 id="apropos">à propos</h2>
+                </div>
 
-                    <form action="">
+                <div class="description">
+                    <section class="coding">
+                        <!-- <img src="images/coding.jpg" data-original="images/coding.jpg" alt="" class="lazy">-->
+
+
+                    </section>
+
+                    <section class="textdescription">
+
+                        <div class="center">
+                            <div>
+                                <!-- <h3>Julien Garret Développeur Front-End</h3>-->
+
+                                <p> Bonjour, je m’appelle Julien j’ai 29 ans, je suis Développeur Front-End diplômé de
+                                    l'Ecole Multmédia (niveau II [Bac+3/4])</p>
+
+
+                                <p> Passionné par le web et les nouvelles technologies, je suis sans cesse à la
+                                    recherche de nouveautés me permettant d'enrichir mes connaissances.</p>
+
+                                <p> J'aime également la musique, les jeux vidéos, les mangas, les comics.</p>
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <section class="competence">
+
+                    <div class="languages">
+                        <h3>langages</h3>
+
+                        <div class="left">
+                            <div class="bloc">
+                                <div class="pourcent">
+                                    <div id="myStat1" data-dimension="65" data-text="55%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="90" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination">HTML5</div>
+                            </div>
+                            <div class="bloc">
+                                <div class="pourcent">
+                                    <div id="myStat2" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="80" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination">CSS3</div>
+                            </div>
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+                                    <div id="myStat3" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="50" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination">JQUERY</div>
+                            </div>
+                        </div>
+                        <div class="left">
+                            <div class="bloc">
+
+                                <div class="pourcent">
+
+                                    <div id="myStat4" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="30" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination">PHP</div>
+
+                            </div>
+
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+                                    <div id="myStat5" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="30" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination">JAVASCRIPT</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="framwork">
+                        <h3>frameworks et cms</h3>
+
+                        <div class="left">
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+
+                                    <div id="myStat6" data-dimension="65" data-text="55%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="15" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination"> Symfony 2</div>
+                            </div>
+
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+                                    <div id="myStat7" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="15" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination"> Laravel</div>
+
+                            </div>
+                        </div>
+
+                        <div class="left">
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+
+                                    <div id="myStat8" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="25" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination"> Codeigniter</div>
+
+                            </div>
+
+
+                            <div class="bloc">
+
+                                <div class="pourcent">
+                                    <div id="myStat9" data-dimension="65" data-text="35%" data-info="New Clients"
+                                         data-width="10"
+                                         data-fontsize="38" data-percent="35" data-fgcolor="#179d83"
+                                         data-bgcolor="#121c27"></div>
+                                </div>
+                                <div class="nomination"> Wordpress</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="clear"></div>
+                </section>
+
+                <div class="dlresume">
+                    <a href="CV_06_2015-2.pdf" title="télécharger mon cv" class="moncv" target="_blank">télécharger mon
+                        cv</a>
+                </div>
+
+
+                <section class="contact" id="contact">
+
+
+                    <h2>contact</h2>
+
+                    <div class="container">
+                        <p>Mon profil vous intéresse ? N’hésitez pas à me contacter via le formulaire ci-dessous.</p>
+
+                        <form action="">
         <span class="input input--rurifirst">
 					<input class="input__field input__field--ruri" id="input-26" type="text">
 					<label class="input__label input__label--ruri" for="input-26">
@@ -386,33 +391,41 @@
 				</span>
 
 
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
 
-                        <input type="submit" value="ENVOYER"/>
-                    </form>
-                </div>
+                            <input type="submit" value="ENVOYER"/>
+                        </form>
+                    </div>
 
-            </section>
+                </section>
 
-            <section class="sociaux">
+                <section class="sociaux">
 
-                <p>Retrouvez-moi également sur les réseaux sociaux :</p>
+                    <p>Retrouvez-moi également sur les réseaux sociaux :</p>
 
-                <div class="component">
-
-                    <a href="#" class="icon icon-border facebook">facebook</a>
-                    <a href="#" class="icon icon-border twitter">twitter</a>
-                    <a href="#" class="icon icon-border googleplus">google+</a>
-                    <a href="#" class="icon icon-border github">github</a>
-                    <a href="#" class="icon icon-border rss">rss</a>
-                </div>
+                    <div class="component">
 
 
-            </section>
+                        <a href="http://www.linkedin.com/pub/julien-garret/37/bbb/9b3" title="Linkedin" target="_blank"
+                           class="icon icon-border facebook">facebook</a>
+                        <a href="http://fr.viadeo.com/fr/profile/garret.julien" title="Viadeo" target="_blank"
+                           class="icon icon-border twitter">twitter</a>
+                        <a href="https://twitter.com/JulienGarret" title="Twitter" target="_blank"
+                           class="icon icon-border googleplus">google+</a>
+                        <a href="http://www.facebook.com/juliengarret01" title="Facebook" target="_blank"
+                           class="icon icon-border github">github</a>
+                        <a href="https://plus.google.com/u/0/114924479134084807854/posts" title="Google +"
+                           target="_blank" class="icon icon-border rss">rss</a>
 
 
+                    </div>
+
+
+                </section>
+
+
+        </div>
     </div>
-</div>
 </div>
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
@@ -423,14 +436,16 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.circliful.min.js"></script>
+<script src="scripts/responsive-nav.js"></script>
+
 <script src="scripts/fastclick.js"></script>
 <script src="scripts/scroll.js"></script>
 
-<script src="scripts/responsive-nav.js"></script>
 <script src="scripts/fixed-responsive-nav.js"></script>
 
 <script src="scripts/classie.js"></script>
 <script src="scripts/scripts.js"></script>
+
 
 <!-- endbuild -->
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

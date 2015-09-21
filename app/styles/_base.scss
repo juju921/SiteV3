@@ -18,4 +18,14 @@ a {
 }
 
 
+input, textarea, button {
+  -webkit-appearance: none; /*Safari/Chrome*/
+  -moz-appearance: none; /*Firefox*/
+  -ms-appearance: none; /*IE*/
+  -o-appearance: none; /*Opera*/
+  appearance: none;
+
+  -webkit-border-radius: 0;
+}
+
 img { display: block; margin:0 auto; max-width:100%; }

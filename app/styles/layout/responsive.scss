@@ -2,7 +2,589 @@
    responsive/Home
    ========================= */
 
+@include desktoMidle {
+  .input--rurifirst {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 8.8125em 1em 1em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 1em 2.5em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .apropos {
+
+    .description {
+      width: 100%;
+      overflow: hidden;
+      .coding {
+        height: 445px;
+        img {
+          width: 100%;
+
+        }
+        width: 50%;
+        float: left;
+
+      }
+      .textdescription {
+        width: 50%;
+        background: $darkblue;
+        float: left;
+        max-height: 445px;
+        /*padding-bottom: 20px;*/
+        h3 {
+          border-bottom: 1px solid $greenbg;
+        }
+        .center {
+          width: 85%;
+          margin: auto;
+          div {
+            width: 85%;
+            margin: auto;
+          }
+        }
+      }
+
+    }
+
+    .competence {
+      height: 400px;
+      width: 85%;
+      margin: 130px auto 0 auto;
+
+      h3 {
+        font-size: 1.5em;
+        font-family: $font2;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .languages {
+        width: 100%;
+        float: none;
+        height: 350px;
+
+      }
+      .framwork {
+        width: 100%;
+        height: 390px;
+
+      }
+
+      .left {
+        float: left;
+        text-align: left;
+        width: 50%;
+        .pourcent {
+          float: left;
+          width: 25%;
+
+        }
+        .nomination {
+          float: right;
+          width: 75%;
+          line-height: 65px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .bloc {
+          overflow: hidden;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+@include desktopHalf {
+
+  .portfolio {
+    article {
+      .box-hover {
+
+      h3 {
+
+        font-family: "sansationbold", Helvetica, Arial, sans-serif;
+        font-size: 1.62375em;
+        line-height: 1em;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        color: #FFF;
+      }
+      }
+    }
+  }
+
+}
+
+@include desktop {
+
+
+  section.module.parallax-2 {
+    background-image: url("../images/wotbandeau.jpg");
+    display: none;
+    img {
+      display: block;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 220px;
+    }
+  }
+
+
+
+
+  .demo {
+    background: #1D2E40 none repeat scroll 0% 0%;
+    position: relative;
+    width: 100%;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+
+  section.module.parallax-1 {
+    background-image: url("../images/gateau.jpg");
+    display: none;
+    h2 {
+      font-family: $font4;
+      font-size: 3.75em;
+      color: $white;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: capitalize;
+      float: left;
+      margin-left: 25px;
+      margin-top: 335px;
+    }
+
+  }
+
+  .input--rurifirst {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 8.8125em 1em 1em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .sociaux {
+    margin-top: 3em;
+
+    .component {
+      width: 100%;
+      margin: 0 auto;
+
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    margin: 4px 10px 4px 4px;
+    width: 96px;
+    height: 96px;
+    font-size: 0px;
+    text-indent: -9999px;
+  }
+
+  .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 1em 2.5em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+  .input--rurifirst {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 8.8125em 1em 1em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .logo {
+    float: left;
+    margin: 0.499% auto;
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin-left: 5px;
+  }
+
+  .menu .container {
+    width: 93%;
+    overflow: hidden;
+    margin: auto;
+  }
+  .nav-collapse a {
+    padding: 1em 1em;
+    text-align: center;
+    border-top: 0px none;
+    float: left;
+    margin: 0px;
+  }
+
+}
+
+@include tablet {
+  section.module.parallax-1 {
+    background-image: url("../images/gateau.jpg");
+    display: none;
+    h2 {
+      font-family: $font4;
+      font-size: 3.75em;
+      color: $white;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: capitalize;
+      float: left;
+      margin-left: 25px;
+      margin-top: 335px;
+    }
+
+  }
+
+
+  .demo {
+    background: #1D2E40 none repeat scroll 0% 0%;
+    position: relative;
+    width: 100%;
+    padding-bottom: 65px;
+    text-align: center;
+  }
+
+
+
+
+  header h2 {
+    font-size: 1.70313em;
+    margin: 0px;
+    font-family: "satelliteregular", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+  }
+
+  .input--rurifirst {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 8.8125em 1em 1em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+
+  .input {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1em 1em 2.5em;
+    max-width: 100%;
+    width: calc(100% - 2em);
+    vertical-align: top;
+  }
+  .logo {
+    float: left;
+    margin: 1.899% auto 0.499% 4%;
+    width: 90px;
+    height: 90px;
+    display: block;
+
+  }
+
+  .nav-toggle {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+    top: 20px;
+  }
+  .menu {
+    overflow: visible;
+    width: 100%;
+    background: $greenbg;
+    height: 110px;
+    z-index: 3;
+    float: right;
+    z-index: 150;
+    padding: 0.1% 0;
+
+    .container {
+      width: 100%;
+      overflow: visible;
+      margin: auto;
+      padding: 0;
+    }
+
+  }
+
+  .mask {
+    -webkit-transition: opacity 300ms;
+    -moz-transition: opacity 300ms;
+    transition: opacity 300ms;
+    background: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    position: fixed;
+    opacity: 0;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+  }
+
+  .android .mask {
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .js-nav-active .mask {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .portfolio {
+    h2 {
+      font-size: 2.125em;
+      margin: 3.02857142857% auto 3.02857142857% auto;
+      padding: 3.029% 0;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+
+    }
+    .gal {
+      width: 100%;
+      overflow: hidden;
+    }
+    article {
+      width: 50%;
+      overflow: hidden;
+      float: left;
+      position: relative;
+
+      img {
+        width: 100%;
+        float: left;
+        -webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        -ms-transition: all .2s ease-in;
+        transition: all .2s ease-in;
+        -moz-transition-delay: 0.2s;
+        -webkit-transition-delay: 0.2s;
+        -o-transition-delay: 0.2s;
+        -ms-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+
+      }
+      &:hover {
+
+      }
+      .box-hover {
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0;
+        box-sizing: border-box;
+        background: rgba(52, 73, 94, 0.65) none repeat scroll 0% 0%;
+        position: absolute;
+        transition: all 1100ms cubic-bezier(0.23, 1, 0.32, 1) 0s;
+
+        .box {
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+          text-align: center;
+
+        }
+
+        &:hover {
+          opacity: 1;
+
+        }
+
+        h3 {
+          color: $white;
+          font-family: $font2;
+          font-size: 1.82375em;
+          line-height: 1em;
+          margin-bottom: 0;
+          text-transform: uppercase;
+        }
+
+        span {
+          font-size: $font3;
+          color: $white;
+          font-size: 1.255em;
+
+        }
+
+      }
+    }
+  }
+
+  .apropos {
+
+
+
+
+
+    .description {
+      width: 100%;
+      overflow: hidden;
+      .coding {
+
+        img {
+          width: 100%;
+
+        }
+        width: 100%;
+        float: left;
+
+      }
+      .textdescription {
+        width: 100%;
+        background: $darkblue;
+        float: left;
+        max-height: 445px;
+        padding-bottom: 20px;
+        h3 {
+          border-bottom: 1px solid $greenbg;
+        }
+        .center {
+          width: 85%;
+          margin: auto;
+          div {
+            width: 85%;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .competence {
+      height: 400px;
+      width: 85%;
+      margin: 130px auto 0 auto;
+
+      h3 {
+        font-size: 1.5em;
+        font-family: $font2;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .languages {
+        width: 100%;
+        float: none;
+        height: 350px;
+
+      }
+      .framwork {
+        width: 100%;
+        height: 282px;
+
+      }
+
+      .left {
+        float: left;
+        text-align: left;
+        width: 50%;
+        .pourcent {
+          float: left;
+          width: 25%;
+
+        }
+        .nomination {
+          float: right;
+          width: 75%;
+          line-height: 65px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        .bloc {
+          overflow: hidden;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+
+    }
+
+  }
+}
+
 @include portable {
+  .menu-gal .container {
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+  .menu-gal {
+    overflow: visible;
+    width: 100%;
+    background: #16A085 none repeat scroll 0% 0%;
+    height: 110px;
+    position: fixed;
+    top: 0px;
+    float: right;
+    z-index: 150;
+    padding: 0.1% 0px;
+  }
+  .demo #tel {
+    position: relative;
+    top: -35px;
+  }
+
+
+  header h2 {
+    font-size: 1.203em;
+    margin: 0px;
+    font-family: "satelliteregular", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+  }
+
   body {
     margin: 0;
     padding: 0;
@@ -17,9 +599,11 @@
       padding-top: 0; /*2.50847457627%;*/
       text-align: center;
       margin: auto;
+
     }
     img {
       width: 50%;
+      padding-top: 2em;
     }
     h1 {
       font-size: 1.703125em;
@@ -33,6 +617,7 @@
     width: 100%;
     overflow: hidden;
     margin: auto;
+
   }
 
   .menu--icon {
@@ -171,17 +756,17 @@
       }
       .textdescription {
         width: 100%;
-        background:$darkblue;
+        background: $darkblue;
         float: left;
         max-height: 445px;
         padding-bottom: 20px;
-        h3{
+        h3 {
           border-bottom: 1px solid $greenbg;
         }
         .center {
           width: 85%;
           margin: auto;
-          div{
+          div {
             width: 85%;
             margin: auto;
           }
@@ -194,29 +779,29 @@
       width: 85%;
       margin: 130px auto 0 auto;
 
-      h3{
+      h3 {
         font-size: 1.5em;
         font-family: $font2;
         text-align: center;
         text-transform: uppercase;
       }
 
-
       .languages {
         width: 100%;
         float: none;
         height: 350px;
+
       }
       .framwork {
         width: 100%;
+        height: 490px;
 
-        height: 282px;
       }
 
       .left {
         float: left;
         text-align: left;
-        width: 50%;
+        width: 100%;
         .pourcent {
           float: left;
           width: 25%;
@@ -277,59 +862,56 @@
       margin: auto;
       overflow: hidden;
 
-
       textarea {
-        width: 91%;
-        margin: auto;
-        background: $darkblue;
-        border-bottom: 5px solid $greenbg;
-        color: lighten($bluebg, 20%);
-        margin: 1em;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        border-color: Transparent;
+        width: 85%;
+        background: #1D2E40 none repeat scroll 0% 0%;
+        border-width: medium medium 5px;
+        border-style: none none solid;
+        color: #587CA0;
+        border-color: transparent;
         resize: none;
         height: 298px;
         font-size: 1.5em;
-        padding: 18px 0  0 10px;
+        padding: 8px 0px 0px 6px;
+        margin: 10px auto;
+        display: block;
       }
       input[type="submit"] {
-        background: $greenbg;
-        width: 100%;
-       font-size: 1.6em;
+        background: #16A085 none repeat scroll 0% 0%;
+        width: 88%;
+        font-size: 1.6em;
         display: block;
-        padding: 14px 20px 25px 20px;
+        padding: 14px 20px 25px;
         float: none;
-        margin: 0 auto;
+        margin: 25px auto;
         height: 13px;
         line-height: 13px;
         text-align: center;
-        border:none;
-        color: $white;
+        border: medium none;
+        color: #FFF;
         text-transform: uppercase;
+        display: block;
       }
 
-      p{
+      p {
         text-align: center;
       }
     }
   }
 
-  .sociaux{
+  .sociaux {
     width: 85%;
     margin: auto;
-    p{
+    p {
       text-align: center;
     }
-    .component{
+    .component {
       width: 85%;
       margin: auto;
+      margin: 40px auto;
 
     }
   }
-
-
 
   .illustration {
     top: 0px;
@@ -359,7 +941,7 @@
       }
       h1 {
         font-family: $font2;
-        font-size: 2.375em;
+        font-size: 1.375em;
         margin: 0;
         text-transform: uppercase;
 
@@ -372,7 +954,6 @@
     }
   }
 
-
   .single-work {
     .presentation {
       margin-top: 80%;
@@ -381,60 +962,57 @@
     }
   }
 
+  .presentation {
+    position: relative;
+    background: $bluebg none repeat scroll 0% 0%;
+    width: 100%;
+    //margin-top: 742px;
+    //padding: 45px 0px 80px;
 
+    z-index: 2;
 
-.presentation {
-  position: relative;
-  background: $bluebg none repeat scroll 0% 0%;
-  width: 100%;
-  //margin-top: 742px;
-  //padding: 45px 0px 80px;
-
-  z-index: 2;
-
-  .container {
-    width: 85%;
-    margin: auto;
-    text-align: center;
-  }
-
-  p {
-    margin: 0;
-    font-family: $font3;
-  }
-  .strong {
-    font-family: $font2;
-  }
-
-  #acceder {
-    display: block;
-    background: $greenbg;
-    color: $white;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 8px 25px;
-    width: 201px;
-    height: 40px;
-    margin: 0 auto 130px auto;
-    line-height: 40px;
-    font-size: 1.125em;
-    &:hover {
-
-      color: #0C5547;
+    .container {
+      width: 85%;
+      margin: auto;
+      text-align: center;
     }
+
+    p {
+      margin: 0;
+      font-family: $font3;
+    }
+    .strong {
+      font-family: $font2;
+    }
+
+    #acceder {
+      display: block;
+      background: $greenbg;
+      color: $white;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 8px 25px;
+      width: 201px;
+      height: 40px;
+      margin: 0 auto 130px auto;
+      line-height: 40px;
+      font-size: 1.125em;
+      &:hover {
+
+        color: #0C5547;
+      }
+    }
+
+    .elodie {
+      padding-top: 68px;
+
+    }
+    .pres {
+      margin-bottom: 73px;
+
+    }
+
   }
-
-  .elodie {
-    padding-top: 68px;
-
-  }
-  .pres {
-    margin-bottom: 73px;
-
-  }
-
-}
-
 
   .menu {
     overflow: visible;
@@ -455,6 +1033,44 @@
 
   }
 
+}
+
+@include portablemini {
+  .apropos .competence .framwork {
+    width: 100%;
+    height: 485px;
+  }
+  .apropos .competence .left {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+
+  header h2 {
+    font-size: 1.203em;
+    margin: 0px;
+    font-family: "satelliteregular", Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+  }
+  .apropos .competence h3 {
+    font-size: 1.2em;
+    font-family: "sansationbold", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .nav-toggle {
+    -moz-osx-font-smoothing: grayscale;
+    text-decoration: none;
+    text-indent: -300px;
+    position: relative;
+    overflow: hidden;
+    width: 60px;
+    height: 55px;
+    float: right;
+    top: 20px;
+    z-index: 3;
+  }
 }
 
 

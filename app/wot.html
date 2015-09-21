@@ -23,17 +23,19 @@
 
 <div class="menu-gal">
     <div class="container">
-        <a href="" class="left"><img src="images/julienGarretMini.png"></a>
-        <nav class="main-nav">
+        <a href="/" class="logo"><img src="images/julienGarretMini.png"></a>
+        <nav class=" nav-collapse">
+
             <ul>
-                <li><a href="index.html">accueil</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">a propos</a></li>
-                <li><a href="#">contact</a></li>
+                <li class="menu-item"><a href="index.html#portfolio">accueil</a></li>
+                <li class="menu-item"><a href="index.html#portfolio">portfolio</a></li>
+                <li class="menu-item"><a href="index.html#apropos">a propos</a></li>
+                <li class="menu-item"><a href="index.html#contact">contact</a></li>
             </ul>
         </nav>
     </div>
 </div>
+
 <div id="workBanner">
     <div class="illustration">
         <div class="title">
@@ -73,14 +75,25 @@
 
     </div>
 
-    <div class="wotpa parallax">
+    <!--<div class="wotpa parallax">
         <div class="conteneur">
         <div id="parallax">
         <p style="text-align:center; width:970px;height:470px;padding-top:177px;"><img src="images/wotlogo.png" class="parallax-layer"/></p>
 
         </div>
         </div>
-    </div>
+    </div>-->
+
+    <section class="module content parallax parallax-2">
+        <div class="container">
+            <img src="images/wotlogo.png" class="parallax-layer"/>
+
+        </div>
+
+
+    </section>
+
+
     <div class="demo elodie">
 
         <img src="images/wotdoublescrean.png" data-original="images/wotdoublescrean.png" alt=""  class="lazy pres">
@@ -138,7 +151,13 @@
 <!-- build:js scripts/main.js -->
 <script src="scripts/main.js"></script>
 <script src="scripts/jquery.lazyload.js"></script>
-<script src="scripts/jquery.jparallax.js"></script>
+<script src="scripts/parallax.min.js"></script>
+<script src="scripts/fastclick.js"></script>
+<script src="scripts/scroll.js"></script>
+
+<script src="scripts/responsive-nav.js"></script>
+<script src="scripts/fixed-responsive-nav.js"></script>
+
 <!-- endbuild -->
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
